@@ -1,0 +1,12 @@
+# 必需
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+loguru>=0.7.0
+
+# 可选，用哪个后端装哪个
+redis>=5.0.0          # QUEUE_BACKEND / DEDUP_BACKEND = redis
+pymongo>=4.6.0        # OUTPUT_BACKEND = mongo
+kafka-python>=2.0.2   # OUTPUT_BACKEND = kafka
+
+# 本机跑 deploy.py 才用得到，服务器上装了也不影响
+paramiko>=3.4.0
